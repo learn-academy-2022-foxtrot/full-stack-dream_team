@@ -10,5 +10,7 @@ Rails.application.routes.draw do
 
   get 'blog/new' => 'blog#new', as: 'new_blog'
 
+  post 'blogs' => 'blog#create'
+  
   root "blog#index"
 end
