@@ -1,5 +1,6 @@
 <h3><%= @blog.title %></h3>
 <p><%= @blog.content %></p>
+<button><%= link_to 'Edit Post', edit_blog_path %></button>
 <%= link_to 'Delete Blog', delete_blog_path(@blog),
 data: { 'turbo-method': :delete, 'turbo-confirm': 'Are you sure?' }  %>
 <p><%= link_to 'Go Home', blogs_path %></p>
